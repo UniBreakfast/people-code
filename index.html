@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
   <script src="app.js" type="module"></script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="v12n.css">
 
   <title>People Code</title>
 </head>
@@ -15,7 +17,36 @@
 <body>
   <div id="app">
     <div id="v12nScr">
+      <header>
+        <h1>People Code</h1>
 
+        <h2 id="greetText">
+          Here should be the greeting text if it was provided earlier.
+        </h2>
+      </header>
+
+      <main>
+        <form id="v12nForm" action="javascript:">
+          <input id="pwdFld" type="password">
+          <button id="verifyBtn">verify</button>
+        </form>
+
+        <p id="v12nInformer">
+          Enter your password.
+        </p>
+      </main>
+
+      <footer>
+        <nav id="v12nNav" hidden>
+          <ul>
+            <li><a href="#day">Day</a></li>
+            <li><a href="#week">Week</a></li>
+            <li><a href="#month">Month</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#search">Search</a></li>
+          </ul>
+        </nav>
+      </footer>
     </div>
 
     <div id="dayScr">

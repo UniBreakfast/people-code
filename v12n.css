@@ -1,0 +1,10 @@
+#v12nScr {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+#v12nScr>footer ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
