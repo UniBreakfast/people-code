@@ -9,7 +9,7 @@ async function enter() {
 
   else if (await isValid(token) != true) location.hash = '#verification'
 
-  else if (location.hash) router[location.hash]()
+  else if (location.hash) onhashchange()
 
   else router[location.hash = '#day']()
 

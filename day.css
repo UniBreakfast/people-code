@@ -1,0 +1,30 @@
+#day header {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+}
+
+#day nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+#day .date-picker {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+#day .date-picker button {
+  width: 30px;
+  height: 30px;
+}
+
+#day .date-picker .date {
+  width: 165px;
+}

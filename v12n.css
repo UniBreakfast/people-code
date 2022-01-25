@@ -1,9 +1,9 @@
-#v12nScr {
+#verification {
   text-align: center;
   padding: 30px 15px;
 }
 
-#v12nScr>footer ul {
+#verification>footer ul {
   display: flex;
   gap: 30px;
   justify-content: center;
