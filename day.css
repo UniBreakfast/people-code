@@ -28,3 +28,31 @@
 #day .date-picker .date {
   width: 165px;
 }
+
+#day .sessions {
+  list-style: none;
+  padding: 0;
+}
+
+#day .session {
+  background: #eee;
+  display: flex;
+  min-height: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+#day .session [type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+#day .session .time {
+  margin-left: 10px;
+  width: 100px;
+}
+
+#day .session .people {
+  flex-grow: 1;
+}
