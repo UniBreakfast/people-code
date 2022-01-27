@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="v12n.css">
   <link rel="stylesheet" href="day.css">
+  <link rel="stylesheet" href="week.css">
 
   <title>People Code</title>
 </head>
@@ -103,7 +104,73 @@
     </div>
 
     <div id="week" hidden>
+      <header>
+        <button class="burger">menu</button>
 
+        <nav>
+          <div></div>
+
+          <div class="week-picker">
+            <button class="prev"></button>
+
+            <h4>2022, September&nbsp;26 - November&nbsp;2</h4>
+
+            <button class="next"></button>
+          </div>
+
+          <a href="#month">Month</a>
+        </nav>
+      </header>
+
+      <main>
+        <ul class="days" onclick="location.hash='#day'">
+          <li class="day">
+            <div class="date">26, Monday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">27, Tuesday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">28, Wednesday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">29, Thursday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">30, Friday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">1, Saturday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+
+          <li class="day">
+            <div class="date">2, Sunday</div>
+            <div class="sess-count">4 sessions</div>
+            <div class="hours-total">6.5 hours</div>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+
+      </footer>
     </div>
 
     <div id="month" hidden>

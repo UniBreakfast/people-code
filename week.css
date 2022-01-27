@@ -1,0 +1,42 @@
+#week header {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
+}
+
+#week nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding-right: 10px;
+
+}
+
+#week .week-picker {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+#week .week-picker button {
+  width: 30px;
+  height: 30px;
+}
+
+#week .days {
+  list-style: none;
+  padding: 0;
+}
+
+#week .day {
+  background: #eee;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  min-height: 7vh;
+}
