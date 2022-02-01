@@ -11,6 +11,9 @@ async function enter() {
 
   else if (location.hash) onhashchange()
 
+  else if (localStorage.pplCod_screen)
+    location.hash = localStorage.pplCod_screen
+
   else router[location.hash = '#day']()
 
   /*
