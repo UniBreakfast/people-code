@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <!-- <script src="script.js" defer></script> -->
+  <!-- <script src="app.js" type="module"></script> -->
+
+  <style>
+    * {
+      font-size: 50px;
+    }
+
+    body {
+      padding: 50px;
+    }
+  </style>
+
+  <script>
+    function changeHashIn4() {
+      setTimeout(
+        () => changeHash('#fourth'),
+        1_000,
+      )
+    }
+
+    function changeHash(hash) {
+      const changeHandler = onhashchange
+      onhashchange = null
+      console.log('system')
+
+      location.hash = '#fourth'
+      setTimeout(() => onhashchange = changeHandler)
+    }
+
+    onhashchange = e => {
+      if (location.voluntaryHashChange) {
+        console.log('voluntary')
+        delete location.voluntaryHashChange
+      } else {
+        console.log('self-inflicted')
+      }
+    }
+
+    addEventListener('click', e => {
+      const href = e.target.getAttribute('href')
+      if (
+        href &&
+        href.includes('#') &&
+        href != location.href &&
+        href != location.hash
+      ) {
+        location.voluntaryHashChange = true
+      }
+    }, { capture: true })
+  </script>
+
+  <title>Hash Playground</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <ul>
+      <li><a href="#first">#first</a></li>
+      <li><a href="#second">#second</a></li>
+      <li><a href="#third">#third</a></li>
+    </ul>
+    <button onclick="changeHashIn4()">change hash in 4s</button>
+  </div>
+</body>
+
+</html>

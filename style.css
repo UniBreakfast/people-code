@@ -3,7 +3,7 @@
 }
 
 #app>:target {
-  display: unset
+  display: unset;
 }
 
 .burger {
